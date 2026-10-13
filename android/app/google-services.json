@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "101491376530",
+    "project_id": "battalionchai",
+    "storage_bucket": "battalionchai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101491376530:android:575d43608b0a305f48414b",
+        "android_client_info": {
+          "package_name": "com.battalion_chai.battalion_chai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsj21awTiZYW811nvIfSS_X3Px2Yt8NhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
