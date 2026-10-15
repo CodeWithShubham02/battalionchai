@@ -1,6 +1,8 @@
 import 'package:battalion_chai/users/widget/app_footer_screen.dart';
 import 'package:battalion_chai/users/widget/app_header_screen.dart';
 import 'package:battalion_chai/users/widget/feature_strip.dart';
+import 'package:battalion_chai/users/widget/home_about_section_widget.dart';
+import 'package:battalion_chai/users/widget/home_branch_section_widget.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -44,7 +46,10 @@ class UserHomeScreen extends StatelessWidget {
                       ),
                       child: _buildBestSellers(context),
                     ),
-
+// Branches section
+                    const HomeBranchesSection(),
+                    // About Us section
+                    const HomeAboutSection(),
                     // Welcome section
                     Container(
                       color: cream,
@@ -138,20 +143,20 @@ class UserHomeScreen extends StatelessWidget {
               ),
 
               // Banner button area
-              Positioned(
-                left: constraints.maxWidth * 0.045,
-                bottom: constraints.maxWidth * 0.055,
-                child: ElevatedButton(
-                  onPressed: () {
-                    Get.toNamed(AppRoutes.menuScreen);
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: saffron,
-                    foregroundColor: militaryGreen,
-                  ),
-                  child: const Text('Explore Our Menu'),
-                ),
-              ),
+              // Positioned(
+              //   left: constraints.maxWidth * 0.045,
+              //   bottom: constraints.maxWidth * 0.055,
+              //   child: ElevatedButton(
+              //     onPressed: () {
+              //       Get.toNamed(AppRoutes.menuScreen);
+              //     },
+              //     style: ElevatedButton.styleFrom(
+              //       backgroundColor: saffron,
+              //       foregroundColor: militaryGreen,
+              //     ),
+              //     child: const Text('Explore Our Menu'),
+              //   ),
+              // ),
             ],
           ),
         );
